@@ -57,7 +57,7 @@
   color: #fbfbfb;
 }
 .form_yacht {
-  width: 100px;
+  width: 100%;
 }
 
   .form-field {
@@ -130,8 +130,8 @@
     border-radius: 15px;
     border: none;
     margin-top: 22px;
+    margin-bottom: 84px;
   }
-
 
   .yacht-picture {
 border-radius: 24px;
