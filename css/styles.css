@@ -133,11 +133,10 @@
     margin-bottom: 84px;
   }
 
-  .yacht-picture {
+.yacht-picture {
 display: flex;
-border-radius: 24px;
-width: 100%;
-height: auto;
+
+
 
   }
   .yacht-pic {
@@ -157,6 +156,14 @@ height: auto;
   .form_yacht {
     /* width: 473px;
     margin: 0 auto; */
+  }
+  .yacht-picture {
+    width: 704px;
+    height: 534px;
+    margin: 0 auto;
+  }
+  .yacht-pic {
+    background-size: cover;
   }
   .form-wrap {
     width: 473px;
