@@ -61,6 +61,8 @@
   width: 335px;
 height: 288px;
 display: inline-block;
+padding-left: 18px;
+gap: 18px;
 
 }
 .input_line {
@@ -76,6 +78,10 @@ display: inline-block;
 .button-style {
   padding-top: 10px;
   display: flex;
+  background: #1B414B;
+gap: 10px;
+border-radius: 15px;
+
 }
  
 

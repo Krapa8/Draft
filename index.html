@@ -22,32 +22,32 @@
         <load ="partials/yacht.html" />
         
         <section class="rent-a-yacht/section">
-          <div class="container">
+         
     
             <h2 class="main-phrase">Rent a yacht now</h2>
             
             <form class="form_yacht">
               <div class="modal-field">
               <input type="text" id="fname" name="fullname" placeholder="Full name"
-              pattern="" class="input_line">
+              pattern="^.* .*$" class="input_line">
 
               <input type="text" id="fname" name="fullname" placeholder="Full name"
-              pattern="" class="input_line">
+              pattern="^.* .*$" class="input_line">
 
               <input type="email" id="email" name="email" placeholder="Email"
-              pattern="" class="input_line">
+              pattern=".+@example\.com" size="30" required class="input_line">
 
               <input type="tel" id="phone" name="phone" placeholder="Phone number"
-              pattern="" class="input_line">
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4} required"  class="input_line">
 
               <textarea id="comment" class="input_line" name="comment" placeholder="Comment"
-              pattern=""></textarea >
+              pattern="[a-z]{1,30}(,[a-z]{1,30})*"></textarea >
 
             <button type="button" class="button-style">Send</button>  
     
             </form>
            
-          </div>
+        
           
          
          
