@@ -22,7 +22,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.container {
+.rent-container {
   width: 100px;
   min-width: 320px;
   max-width: 375px;
@@ -59,39 +59,130 @@
 .form_yacht {
   width: 100px;
 }
-.form-field {
-width: 335px;
-height: 288px;
-display: inline-block;
-gap: 18px;
-}
-.input_line {
-  width: 100%;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-radius: 12px;
-  background: #FBFBFB80;
-  border: 1px; 
-  background: transparent;
-  line-height: 14px;
-  padding-bottom: 18px;
-}
-.button-style {
-  padding-top: 10px;
-  display: flex;
-  background: #1B414B;
-gap: 10px;
-border-radius: 15px;
-margin-top: 40px;
-}
- 
+
+  .form-field {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 18px;
+  }
+
+  .input_line {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: rgba(251, 251, 251, 0.4);
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 12px;
+    background: #FBFBFB80;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    background: transparent;
+    line-height: 14px;
+    padding-bottom: 18px;
+  }
+  input_line::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: rgba(251, 251, 251, 0.4);
+  }
+  .input_line-area {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: rgba(251, 251, 251, 0.4);
+    width: 100%;
+    border-radius: 12px;
+    background: #FBFBFB80;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    background: transparent;
+    height: 108px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    resize: none;
+  }
+  .input_line-area::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: rgba(251, 251, 251, 0.4);
+  }
+  .button-style {
+    display: block;
+    width: 122px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    padding: 14px 44px;
+    background: #1B414B;
+    gap: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 22px;
+  }
 
 
   .yacht-picture {
 border-radius: 24px;
 width: 335px;
 height: 412px
-
-
-
   }
+
+  
+@media screen and (min-width: 768px) {
+  .rent-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .form_yacht {
+    /* width: 473px;
+    margin: 0 auto; */
+  }
+  .form-wrap {
+    width: 473px;
+    margin: 0 auto;
+  }
+  .button-style {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 110%;
+    width: 194px;
+    padding: 18px 75px;
+  }
+  .main-phrase {
+    /* margin-left: 115px; */
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 100%;
+  }
+}
+  
+@media screen and (min-width: 1280px) {
+  .rent-container {
+    gap: 50px;
+    flex-direction: row-reverse;
+    display: flex;
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+  .form-wrap {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .rent-container {
+    max-width: 1440px;
+    padding-right: 100px;
+  }
+}
